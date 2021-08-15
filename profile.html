@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+
+  -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Collabi</title>
+    <style>
+      textarea {
+        overflow-y: scroll;
+      }
+    </style>
+    <script>
+      onload = function() {
+        var who = document.getElementsByName("comments")[0];
+        who.onkeyup = function() {
+          if (who.scrollTop) who.rows = parseInt(who.rows) + 5;
+        };
+      };
+    </script>
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{seo.url}}" />
+    <meta name="description" content="{{seo.description}}" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{seo.url}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:image" content="{{seo.image}}" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Show choice chart on poll submission -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+      /*
+      The chart uses chart.js - try tweaking the config!
+      https://www.chartjs.org/docs/3.0.2/charts/doughnut.html
+
+      We pass the choices and picks arrays from the page when the server script returns them
+      */
+      function showChart(choices, picks) {
+
+        // Get the page element to show the chart inside
+        var ctx = document.getElementById('myChart');
+    </script>
+
+    <ul class="nav header">
+      <img
+        class="logo"
+        src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FScreenshot%202021-08-14%20at%2011.12.12%20AM.png?v=1628977879700"
+      />
+      <li role="presentation" class="nav-links">
+        <a href="home.html">Home</a>
+      </li>
+
+      <li role="presentation" class="nav-links">
+        <a href="find.html">Find</a>
+      </li>
+      <li role="presentation" class="nav-links">
+        <a href="promo.html">Promotion</a>
+      </li>
+
+      <li role="presentation" class="active nav-links">
+        <a href="profile.html">Profile</a>
+      </li>
+
+      <li role="presentation" class="nav-links">
+        <a href="#" class="notification">
+          <span>Inbox</span>
+          <span class="badge">3</span>
+        </a>
+      </li>
+    </ul>
+  </head>
+
+  <body>
+    <div class="content" role="main">
+      <form class="pro-form">
+        <label for="fname" class="form-text">First name</label><br />
+        <div class="pro-name">
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Input First Name"
+          /><br />
+          <label for="lname" class="form-text">Last name</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Input Last Name"
+          /><br /><br />
+          <label for="lname" class="form-text">Gender</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="female/male/nonbinary/ect"
+          />
+          <br /><br />
+          <label for="lname" class="form-text">School</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Input School Name"
+          />
+        </div>
+        <br />
+        <br />
+        <label for="lname" class="form-text">Grade</label><br />
+
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html" class="form-text">9th</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css" class="form-text">10th</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript" class="form-text">11th</label><br />
+        <input type="radio" id="java" name="fav_language" value="Java" />
+        <label for="java" class="form-text">12th</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript" class="form-text">Mentor</label><br />
+        <br />
+        <br />
+        <div class="pro-skills">
+          <lable class="form-text"> Skills</lable><br />
+          <div class="skills-boxs">
+            <input
+              type="checkbox"
+              id="skill1"
+              name="skill1"
+              value="js"
+              class="skill"
+            />
+            <label for="skill1" class="form-text">Javascript</label>
+            <input
+              type="checkbox"
+              id="skill1"
+              name="skill1"
+              value="js"
+              class="skill"
+            />
+            <label for="skill1" class="form-text">CSS</label>
+            <input
+              type="checkbox"
+              id="skill1"
+              name="skill1"
+              value="js"
+              class="skill"
+            />
+            <label for="skill1" class="form-text">HTML</label>
+            <!--           <br /> -->
+
+            <input
+              type="checkbox"
+              id="skill2"
+              name="skill2"
+              value="py"
+              class="skill"
+            />
+            <label for="skill2" class="form-text">Python</label>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Public Speaking</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+
+              <label for="skill4" class="form-text">Design</label>
+            </div>
+
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Planning</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Promoting</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Communication</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Leadership</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Writting</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Hardware</label>
+            </div>
+
+            <div class="skill">
+              <input type="checkbox" id="skill4" name="skill4" value="js" />
+              <label for="skill4" class="form-text">Organization</label>
+            </div>
+          </div>
+          <br />
+          <br />
+          <label for="lname" class="form-text">Bio</label><br />
+
+          <textarea
+            id="bio-text"
+            type="text"
+            name="comments"
+            cols="50"
+            rows="5"
+            placeholder="Talk about your self! What do you like? What are you currently doing in life? Social media for contacting?"
+          ></textarea>
+
+          <br /><br />
+          <br />
+
+          <label for="javascript" class="form-text">Photo</label>
+
+          <div id="file-upload">
+            <input type="file" id="myFile" name="filename" class="form-text" />
+          </div>
+
+          <button type="submit" value="submit" id="update-profile-btn">
+            Update Profile
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

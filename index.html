@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+
+  -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Collabi</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{seo.url}}" />
+    <meta name="description" content="{{seo.description}}" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{seo.url}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:image" content="{{seo.image}}" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Show choice chart on poll submission -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+      /*
+      The chart uses chart.js - try tweaking the config!
+      https://www.chartjs.org/docs/3.0.2/charts/doughnut.html
+
+      We pass the choices and picks arrays from the page when the server script returns them
+      */
+      function showChart(choices, picks) {
+
+        // Get the page element to show the chart inside
+        var ctx = document.getElementById('myChart');
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <img
+          src="https://cdn.glitch.com/fd8ddc59-ccc6-4515-bc87-a323cd791fb8%2FScreenshot%202021-08-13%20at%203.06.49%20PM.png?v=1628892415636"
+        />
+
+        <ul class="nav">
+          <li role="presentation" class="active nav-links">
+            <a href="home.html">Home</a>
+          </li>
+        
+          <li role="presentation" class="nav-links">
+            <a href="find.html">Find</a>
+          </li>
+          <li role="presentation" class="nav-links">
+            <a href="promo.html">Promotion</a>
+          </li>
+          <li role="presentation" class="nav-links">
+            <a href="sign_in.html">Sign In </a>
+          </li>
+
+          <!--   <li role="presentation"><a href="#">Inbox  <span class="badge">4</span> </a> </li> -->
+        </ul>
+
+        <!-- This is the start of content for our page -->
+
+        <p>
+          <!-- Pass arrays from the API to the chart script in page head -->
+          <canvas id="myChart"></canvas>
+          <script type="text/javascript">
+            showChart(
+              "{{{ optionNames }}}".split(","),
+              "{{{ optionCounts }}}".split(",")
+            );
+          </script>
+        </p>
+        <!-- If the user hasn't already made a choice we show the poll -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

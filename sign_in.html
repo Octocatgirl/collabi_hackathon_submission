@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+
+  -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Collabi</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{seo.url}}" />
+    <meta name="description" content="{{seo.description}}" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{seo.url}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:image" content="{{seo.image}}" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Show choice chart on poll submission -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+      /*
+      The chart uses chart.js - try tweaking the config!
+      https://www.chartjs.org/docs/3.0.2/charts/doughnut.html
+
+      We pass the choices and picks arrays from the page when the server script returns them
+      */
+      function showChart(choices, picks) {
+
+        // Get the page element to show the chart inside
+        var ctx = document.getElementById('myChart');
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <ul class="nav header">
+          <img
+            class="logo"
+            src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FScreenshot%202021-08-14%20at%2011.12.12%20AM.png?v=1628977879700"
+          />
+          <li role="presentation" class="nav-links">
+            <a href="home.html">Home</a>
+          </li>
+          <li role="presentation" class="nav-links">
+            <a href="profile.html">Profile</a>
+          </li>
+          <li role="presentation" class="nav-links">
+            <a href="find.html">Find</a>
+          </li>
+          <li role="presentation" class="nav-links">
+            <a href="promo.html">Promote</a>
+          </li>
+          <li role="presentation" class="active nav-links">
+            <a href="sign_in.html">Sign In </a>
+          </li>
+        </ul>
+
+        <form class="log-form">
+          <div class="container">
+            <label for="uname"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="uname"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <button type="submit">
+              <a href="home.html" class="button-link"> Login</a>
+            </button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">
+              <a class="button-link" href="index.html">Cancel</a>
+            </button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+<script src="script.js"></script>
+        
+      </div>
+    </div>
+  </body>
+</html>

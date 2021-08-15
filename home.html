@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+
+  -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Collabi</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{seo.url}}" />
+    <meta name="description" content="{{seo.description}}" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{seo.url}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:image" content="{{seo.image}}" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Show choice chart on poll submission -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+      /*
+      The chart uses chart.js - try tweaking the config!
+      https://www.chartjs.org/docs/3.0.2/charts/doughnut.html
+
+      We pass the choices and picks arrays from the page when the server script returns them
+      */
+      function showChart(choices, picks) {
+
+        // Get the page element to show the chart inside
+        var ctx = document.getElementById('myChart');
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div class="content" role="main">
+    
+
+        <h1 class="news-head">
+          New Promotions!!
+        </h1>
+
+        <div class="homepage-grid">
+          
+              <div class="search search-grid">
+          <form action="/action_page.php">
+            <input
+              type="text"
+              placeholder="Search.."
+              name="search"
+              class="search-text"
+            />
+          </form>
+          <button type="submit" class="search-btn">
+            Search<i class="fa fa-search"></i>
+          </button>
+        </div>
+          
+          <ul class="nav header home-header">
+            <img
+              class="logo"
+              src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FScreenshot%202021-08-14%20at%2011.12.12%20AM.png?v=1628977879700"
+            />
+            <li role="presentation" class="active nav-links">
+              <a href="home.html">Home</a>
+            </li>
+
+            <li role="presentation" class="nav-links">
+              <a href="find.html">Find</a>
+            </li>
+            <li role="presentation" class="nav-links">
+              <a href="promo.html">Promotion</a>
+            </li>
+
+            <li role="presentation" class="nav-links">
+              <a href="profile.html">Profile</a>
+            </li>
+
+            <li role="presentation" class="nav-links">
+              <a href="#" class="notification">
+                <span>Inbox</span>
+                <span class="badge">3</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="news-feed">
+            <div class="grid-container promo4">
+              <h1 class="item1">
+                Creating Eco Friendly Soap
+              </h1>
+              <img
+                class="item2"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2Fdownload.jpeg?v=1629004768568"
+              />
+              <div class="item3">
+                <p>
+                  Hello! I am Jane and my mission and goal is to stop animal
+                  cruelty. You can be vegan to help contribute to the cause. If
+                  you want to do more join my non-profit orginizaton save the
+                  puppies!! Check out my profile if you would like to contact me
+                  for further questions!!
+                </p>
+              </div>
+              <div class="item4">
+                <ul class="tags" id="skills">
+                  <li class="tag">public speaking</li>
+                  <li class="tag">marketing</li>
+                  <li class="tag">promotion</li>
+                  <li class="tag">design</li>
+                  <li class="tag">dedication</li>
+                </ul>
+                <ul class="tags" id="wants">
+                  <li class="tag">activism</li>
+                  <li class="tag">animal cruelty</li>
+                  <li class="tag">social media</li>
+                </ul>
+              </div>
+
+              <div class="item6">
+                <button>
+                  Join!
+                </button>
+              </div>
+
+              <div class="item7">
+                <a src="#">More info</a>
+              </div>
+              <div class="item8">
+                <h4>
+                  Contacts
+                </h4>
+                <ul>
+                  <li>Discord: puppies#0000</li>
+                  <li>Instagram: @SaveDAanminals</li>
+                  <li>Email: puppies@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid-container promo1">
+              <h1 class="item1">
+                BRING CHANGE NOW!
+              </h1>
+              <img
+                class="item2"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2F8d717fc5-9717-4bfd-9d53-364930d14744.image.png?v=1629004671255"
+              />
+              <div class="item3">
+                <p>
+                  Hello! I am Jane and my mission and goal is to stop animal
+                  cruelty. You can be vegan to help contribute to the cause. If
+                  you want to do more join my non-profit orginizaton save the
+                  puppies!! Check out my profile if you would like to contact me
+                  for further questions!!
+                </p>
+              </div>
+              <div class="item4">
+                <ul class="tags" id="skills">
+                  <li class="tag">public speaking</li>
+                  <li class="tag">marketing</li>
+                  <li class="tag">promotion</li>
+                  <li class="tag">design</li>
+                  <li class="tag">dedication</li>
+                </ul>
+                <ul class="tags" id="wants">
+                  <li class="tag">activism</li>
+                  <li class="tag">animal cruelty</li>
+                  <li class="tag">social media</li>
+                </ul>
+              </div>
+
+              <div class="item6">
+                <button>
+                  Join!
+                </button>
+              </div>
+
+              <div class="item7">
+                <a src="#">More info</a>
+              </div>
+              <div class="item8">
+                <h4>
+                  Contacts
+                </h4>
+                <ul>
+                  <li>Discord: puppies#0000</li>
+                  <li>Instagram: @SaveDAanminals</li>
+                  <li>Email: puppies@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid-container promo2">
+              <h1 class="item1">
+                Help Teach Your Peers 🤓
+              </h1>
+              <img
+                class="item2"
+                src="https://missioncollege.edu/marketing/images/buttons/tutoring-center-students.jpg"
+              />
+              <div class="item3">
+                <p>
+                  Hello! I am Jane and my mission and goal is to stop animal
+                  cruelty. You can be vegan to help contribute to the cause. If
+                  you want to do more join my non-profit orginizaton save the
+                  puppies!! Check out my profile if you would like to contact me
+                  for further questions!!
+                </p>
+              </div>
+              <div class="item4">
+                <ul class="tags" id="skills">
+                  <li class="tag">public speaking</li>
+                  <li class="tag">marketing</li>
+                  <li class="tag">promotion</li>
+                  <li class="tag">design</li>
+                  <li class="tag">dedication</li>
+                </ul>
+                <ul class="tags" id="wants">
+                  <li class="tag">activism</li>
+                  <li class="tag">animal cruelty</li>
+                  <li class="tag">social media</li>
+                </ul>
+              </div>
+
+              <div class="item6">
+                <button>
+                  Join!
+                </button>
+              </div>
+
+              <div class="item7">
+                <a src="#">More info</a>
+              </div>
+              <div class="item8">
+                <h4>
+                  Contacts
+                </h4>
+                <ul>
+                  <li>Discord: puppies#0000</li>
+                  <li>Instagram: @SaveDAanminals</li>
+                  <li>Email: puppies@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-container promo3">
+              <h1 class="item1">
+                An Ground Breaking NFT Start Up!!
+              </h1>
+              <img
+                class="item2"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FScreenshot%202021-08-14%20at%2010.25.22%20PM.png?v=1629005127590"
+              />
+              <div class="item3">
+                <p>
+                  Hello! I am Jane and my mission and goal is to stop animal
+                  cruelty. You can be vegan to help contribute to the cause. If
+                  you want to do more join my non-profit orginizaton save the
+                  puppies!! Check out my profile if you would like to contact me
+                  for further questions!!
+                </p>
+              </div>
+              <div class="item4">
+                <ul class="tags" id="skills">
+                  <li class="tag">programing</li>
+                  <li class="tag">marketing</li>
+                  <li class="tag">promotion</li>
+                  <li class="tag">design</li>
+                  <li class="tag">drawing</li>
+                  <li class="tag">market research</li>
+                </ul>
+                <ul class="tags" id="wants">
+                  <li class="tag">nft</li>
+                  <li class="tag">cryptocurrency</li>
+                  <li class="tag">art</li>
+                  <li class="tag">non-profit</li>
+                  <li class="tag">social</li>
+                </ul>
+              </div>
+
+              <div class="item6">
+                <button>
+                  Join!
+                </button>
+              </div>
+
+              <div class="item7">
+                <a src="#">More info</a>
+              </div>
+              <div class="item8">
+                <h4>
+                  Contacts
+                </h4>
+                <ul>
+                  <li>Discord: https://discord.gg/gZ44NWwnqT</li>
+                  <li>Instagram: @RejuvNFT</li>
+                  <li>Email: rejuvNFT@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid-container promo4">
+              <h1 class="item1">
+                We need help!
+              </h1>
+              <img
+                class="item2"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FScreenshot%202021-08-14%20at%2011.12.12%20AM.png?v=1628977879700"
+              />
+              <div class="item3">
+                <p>
+                  Our website is a networking platform that is focused on teens.
+                  I Shaylee the founder of Collabi wish to expand this start-up.
+                  To do that I need your help!! Join our team today!
+                </p>
+              </div>
+              <div class="item4">
+                <ul class="tags" id="skills">
+                  <li class="tag">public speaking</li>
+                  <li class="tag">marketing</li>
+                  <li class="tag">promotion</li>
+                  <li class="tag">design</li>
+                  <li class="tag">dedication</li>
+                </ul>
+                <ul class="tags" id="wants">
+                  <li class="tag">activism</li>
+                  <li class="tag">animal cruelty</li>
+                  <li class="tag">social media</li>
+                </ul>
+              </div>
+
+              <div class="item6">
+                <button>
+                  Join!
+                </button>
+              </div>
+
+              <div class="item7">
+                <a src="#">More info</a>
+              </div>
+              <div class="item8">
+                <h4>
+                  Contacts
+                </h4>
+                <ul>
+                  <li>Discord: puppies#0000</li>
+                  <li>Instagram: @SaveDAanminals</li>
+                  <li>Email: puppies@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-profile">
+            <h2 class="user-name">Shaylee Coulter</h2>
+            <img
+              class="user-img"
+              src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FIMG_6770.jpg?v=1629023339727"
+            />
+            <div class="user-tags">
+              <h1 class="tag-header">
+                Skills
+              </h1><br/>
+              <ul class="tags" id="skills">
+                <li class="tag">javascript</li>
+                <li class="tag">public speaking</li>
+                <li class="tag">python</li>
+                <li class="tag">css</li>
+                <li class="tag">html</li>
+                <li class="tag">planning</li>
+              </ul>
+              <h1 class="tag-header">
+                Interests
+              </h1> <br/>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">NFT</li>
+                <li class="tag">Cryptocurrency</li>
+                <li class="tag">Coding</li>
+                <li class="tag">Hackathons</li>
+                <li class="tag">Entrepreneurship</li>
+              </ul>
+            </div>
+
+            <p class="user-bio">
+              Hello! I am the founder of the Start-ups Rejuv and Collabi!! Nice
+              to meet you! I am looking for peole to help out so please contact
+              me if interested at shaylee.coulter@csedge.org. I am a student at
+              San Leandro HighSchool in CA.
+            </p>
+            <h2 class="user-info grade">
+              Grade: <span class="user-info-span">11th</span>
+            </h2>
+
+            <h2 class="user-info gender">
+              Gender: <span class="user-info-span">Female</span>
+            </h2>
+          </div>
+
+          <!--              <div class="user-most-recent-posts">
+            posts
+          </div> -->
+        </div>
+
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+
+  -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Collabi</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{seo.url}}" />
+    <meta name="description" content="{{seo.description}}" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{seo.url}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:image" content="{{seo.image}}" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Show choice chart on poll submission -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+      /*
+      The chart uses chart.js - try tweaking the config!
+      https://www.chartjs.org/docs/3.0.2/charts/doughnut.html
+
+      We pass the choices and picks arrays from the page when the server script returns them
+      */
+      function showChart(choices, picks) {
+
+        // Get the page element to show the chart inside
+        var ctx = document.getElementById('myChart');
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <ul class="nav header">
+          <img
+            class="logo"
+            src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FScreenshot%202021-08-14%20at%2011.12.12%20AM.png?v=1628977879700"
+          />
+          <li role="presentation" class="nav-links">
+            <a href="home.html">Home</a>
+          </li>
+
+          <li role="presentation" class="active nav-links">
+            <a href="find.html">Find</a>
+          </li>
+          <li role="presentation" class="nav-links">
+            <a href="promo.html">Promotion</a>
+          </li>
+
+          <li role="presentation" class="nav-links">
+            <a href="profile.html">Profile</a>
+          </li>
+
+          <li role="presentation" class="nav-links">
+            <a href="#" class="notification">
+              <span>Inbox</span>
+              <span class="badge">3</span>
+            </a>
+          </li>
+        </ul>
+        
+          <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+          </form>
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Search</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Activist</a>
+            <a href="#">Entrepreneur</a>
+            <a href="#">...</a>
+          </div>
+        </div>
+        
+        
+        <br />
+        <br />
+        <br />
+     
+        <div class="profiles">
+          <div class="profile pro1">
+            <h2 class="pro-name">Jan Doe</h2>
+            <img
+              class="pro-img"
+              src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_811400348_2000133320009280235_401847.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro2">
+            <h2 class="pro-name">John Boe</h2>
+            <img
+              class="pro-img"
+              src="https://i.pinimg.com/originals/e7/1e/f8/e71ef83360f69bea361261cdc1e79128.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro3">
+            <h2 class="pro-name">Dohn Joe</h2>
+            <img
+              class="pro-img"
+              src="https://kwit.app/images/en/preview/young-girls"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro4">
+            <h2 class="pro-name">Sally Wong</h2>
+            <img
+              class="pro-img"
+              src="data:image/jpeg;base64,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"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="profiles">
+          <div class="profile pro1">
+            <h2 class="pro-name">Ashmar Das</h2>
+            <img
+              class="pro-img"
+              src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2016/07/google-awards-1468931719.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro2">
+            <h2 class="pro-name">Talia Kumar</h2>
+            <img
+              class="pro-img"
+              src="https://www.newsindiatimes.com/wp-content/uploads/2019/04/Niharika-Iyer.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro3">
+            <h2 class="pro-name">Sally Sue</h2>
+            <img
+              class="pro-img"
+              src="https://fustany.com/images/en/content/header_image_Fustany-beauty-skincare-simple-easy-beauty-tips-for-teenagers-by-teen-blogger-mainimage.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro4">
+            <h2 class="pro-name">Josh Williams</h2>
+            <img
+              class="pro-img"
+                 src="https://www.machadodentalcenter.com/wp-content/uploads/teenager.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="profiles">
+          <div class="profile pro1">
+            <h2 class="pro-name">Jung Kim</h2>
+            <img
+              class="pro-img"
+              src="https://i.pinimg.com/originals/f0/6a/17/f06a17087695daef3adb757909acc4a8.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro2">
+            <h2 class="pro-name">John Cook</h2>
+            <img
+              class="pro-img"
+              src="https://t4.ftcdn.net/jpg/02/72/08/19/360_F_272081919_y5QwAwqdhcJmPaUPaTW90OsF3bQHKMU8.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro3">
+            <h2 class="pro-name">Whitney Hue</h2>
+            <img
+              class="pro-img"
+              src="https://www.blacknews.com/wp-content/uploads/2017/09/essynce_moore_first_black_teen_books_mandatory_reading_school_districts.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+          <div class="profile pro4">
+            <h2 class="pro-name">Samatha Jones</h2>
+            <img
+              class="pro-img"
+                 src="https://sourcingjournal.com/wp-content/uploads/2020/05/gapteen3.jpg"
+            />
+            <div class="pro-tags">
+              <ul class="tags" id="skills">
+                <li class="tag">public speaking</li>
+                <li class="tag">marketing</li>
+                <li class="tag">promotion</li>
+                <li class="tag">design</li>
+                <li class="tag">dedication</li>
+              </ul>
+              <ul class="tags" id="wants">
+                <li class="tag">activism</li>
+                <li class="tag">animal cruelty</li>
+                <li class="tag">social media</li>
+              </ul>
+            </div>
+            <button class="pro-btn">
+              <img
+                class="collab"
+                src="https://cdn.glitch.com/e65f71e4-5d7e-45d9-8388-517b0c5e33ad%2FPartner%20Me%20(2).png?v=1629009997816"
+              />
+            </button>
+          </div>
+        </div>
+        <button>
+          MORE LOADING...
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
